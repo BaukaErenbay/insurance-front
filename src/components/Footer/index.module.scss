@@ -1,0 +1,58 @@
+@import "../../css/variables.scss";
+
+.root {
+	position: relative;
+	background-color: #131313;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	overflow: hidden;
+
+	.divider {
+		background-color: rgba(255, 255, 255, .2);
+	}
+
+	.title {
+		font-size: px;
+		font-weight: 600;
+		font-size: 20px;
+		color:white;
+		margin-bottom: 26px;
+	}
+
+	.listItem {
+		position:relative;
+		width: 100%;
+		margin-bottom: 6px;
+		color: white;
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		cursor: pointer;
+
+		.icon {
+			position: relative;
+			margin-right: 8px;
+			width: 18px;
+			height: 18px;
+			color:inherit;
+		}
+
+		.listItemText {
+			color:inherit;
+			font-size: 18px;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	.paymentImage {
+		width: 150px;
+	}
+
+	.copyright {
+		color: white;
+		font-size: 18px;
+	}
+}

@@ -1,0 +1,14 @@
+@import "../../css/variables.scss";
+
+.root {
+	position: relative;
+
+	.text {
+		color: gray;
+		font-size: 20px;
+
+		p {
+			margin-top: 0;
+		}
+	}
+}

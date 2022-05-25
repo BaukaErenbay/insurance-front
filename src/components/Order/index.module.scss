@@ -1,0 +1,62 @@
+@import "../../css/variables.scss";
+
+.root {
+	position: relative;
+
+	.fieldNameWrapper {
+		display: flex;
+		padding-top: 15px;
+		@media screen and (max-width: $sm) {
+			padding-top: 0;
+		}
+
+		.fieldName {
+			color: white;
+			font-size: 22px;
+			font-weight: 600;
+			@media screen and (max-width: $md) {
+				margin-bottom: 8px;
+				font-size: 20px;
+			}
+		}
+	}
+
+	.otherOptions {
+		padding-top: 16px;
+		@media screen and (max-width: $sm) {
+			padding-top: 0;
+		}
+
+		.fc {
+			align-items: flex-start;
+			margin-left: 0;
+
+			.checkbox {
+				color: $accent-color;
+				padding: 0;
+				margin-right: 8px;
+			}
+			.label {
+				color: white;
+				line-height: 1.1em;
+				padding-top: 3px;
+			}
+		}
+	}
+
+	.total {
+		position:relative;
+		padding: 12px;
+		background-color: white;
+		color: $main-color;
+
+		.distance {
+			font-size: 16px;
+			margin-bottom: 6px;
+		}
+		.price {
+			font-size: 20px;
+			font-weight: 600;
+		}
+	}
+}

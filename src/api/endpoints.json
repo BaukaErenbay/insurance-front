@@ -1,0 +1,25 @@
+[
+	{
+		"name": "get",
+		"url": "/user.info.php",
+		"method": "post"
+	},
+	{
+		"name": "signin",
+		"url": "/user.signin.php",
+		"method": "post",
+		"params": ["email", "password"]
+	},
+	{
+		"name": "signup",
+		"url": "/user.signup.php",
+		"method": "post",
+		"params": ["email", "password"]
+	},
+	{
+		"name": "update",
+		"url": "/user.update.php",
+		"method": "post",
+		"params": ["email", "secondname", "name", "phone"]
+	}
+]

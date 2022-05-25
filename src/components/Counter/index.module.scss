@@ -1,0 +1,27 @@
+@import "../../css/variables.scss";
+
+.root {
+	position: relative;
+	height: 56px;
+	background-color: white;
+	display: inline-flex;
+	align-items: center;
+	user-select: none;
+
+	.number {
+		height: 100%;
+		text-align: center;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 6px;
+		min-width: 56px;
+		color: $main-color;
+		font-weight: 500;
+		font-size: 18px;
+	}
+
+	.icon {
+		color: $main-color;
+	}
+}

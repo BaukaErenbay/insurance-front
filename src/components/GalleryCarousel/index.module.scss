@@ -1,0 +1,59 @@
+@import "../../css/variables.scss";
+
+.root {
+	position: relative;
+	overflow: hidden;
+
+	.container {
+		position: relative;
+		display: flex;
+
+		.slide {
+			position: relative;
+			min-width: 100%;
+			cursor: grab;
+			&:active {
+				cursor: grabbing;
+			}
+
+			.inner {
+				position: relative;
+				overflow: hidden;
+				padding-top:58%;
+
+				.img {
+					position: absolute;
+					top: 0;
+					left: 0;
+					object-position: center;
+					object-fit: cover;
+					height: 100%;
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+
+.button {
+	position:absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 9;
+	background-color: $main-color!important;
+
+	&[disabled] {
+		opacity: .3;
+	}
+
+	.icon {
+		color: white;
+	}
+}
+
+.prev {
+	left: 8px;
+}
+.next {
+	right: 8px;
+}

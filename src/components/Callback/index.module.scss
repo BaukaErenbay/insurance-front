@@ -1,0 +1,23 @@
+@import "../../css/variables.scss";
+
+.root {
+	position: relative;
+	width: 100%;
+	padding: 84px 0;
+	background-color: lightgray;
+	background-image: url("../../img/other/callback-bg.jpg");
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+
+	.title {
+		color: white;
+	}
+
+	.text {
+		position: relative;
+		width: 100%;
+		color: white;
+		font-size: 20px;
+	}
+}

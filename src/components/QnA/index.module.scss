@@ -1,0 +1,34 @@
+@import "../../css/variables.scss";
+
+.root {
+	position: relative;
+
+	.panel {
+		background-color: rgb(15, 176, 227);
+		min-height: 70px;
+
+		.expandIcon {
+			color: white;
+		}
+
+		.summary {
+			color: white;
+			font-size: 22px;
+			font-weight: 600;
+			min-height: 70px;
+			@media screen and (max-width: $sm) {
+				font-size: 18px;
+			}
+		}
+
+		.details {
+			color: rgba(255, 255, 255, 0.9);
+			font-size: 18px;
+			line-height: 1.4em;
+
+			a {
+				color: $main-color;
+			}
+		}
+	}
+}

@@ -1,0 +1,45 @@
+@import "../../css/variables.scss";
+
+.wrapper {
+	position: relative;
+	display: flex;
+	align-items: center;
+	background-color: white;
+
+	.leftIcon {
+		position: relative;
+		margin-left: 10px;
+		flex: none;
+		color: rgb(15, 176, 227);
+	}
+
+	.root {
+		position: relative;
+
+		.labelRoot {
+			font-weight: 400;
+			font-size: 16px;
+		}
+		.labelFocused {
+			color: rgb(15, 176, 227);
+		}
+
+		.InputRoot {
+			background-color: white;
+
+			&:after {
+				border-bottom-color: rgb(15, 176, 227);
+			}
+			&:before {
+				border-bottom-color: rgb(15, 176, 227);
+			}
+			&:hover:before {
+				border-bottom-color: fade-out(rgb(15, 176, 227), 0.5);
+			}
+		}
+
+		.inputRoot {
+			font-size: 16px;
+		}
+	}
+}

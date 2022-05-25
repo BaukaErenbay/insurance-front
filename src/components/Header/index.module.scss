@@ -1,0 +1,102 @@
+@import "../../css/variables.scss";
+
+.root {
+	position: fixed;
+	width: 100%;
+	height: 80px;
+	top: 0;
+	left: 0;
+	background-color: rgba(44, 157, 220, 0.57);
+	z-index: 100;
+
+	@media screen and (max-width: $sm) {
+		height: 60px;
+	}
+
+	.container {
+		position: relative;
+		height: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		.logoLink {
+			position: relative;
+			flex: none;
+			height: 60%;
+
+			.logo {
+				position: relative;
+				height: 100%;
+			}
+		}
+
+		.right {
+			position: relative;
+			display: flex;
+			align-items: center;
+
+			.items {
+				display: flex;
+
+				a {
+					position: relative;
+					color: white;
+					text-decoration: none;
+					margin-right: 24px;
+
+					&:hover {
+						text-decoration: underline;
+					}
+					&[data-hide="true"] {
+						@media screen and (max-width: $sm) {
+							display: none;
+						}
+					}
+					&:last-child {
+						margin-right: 0;
+					}
+				}
+			}
+
+			.languageWrapper {
+				display: flex;
+				align-items: center;
+				cursor: pointer;
+
+				.languageFlag {
+					position: relative;
+					width: 20px;
+					height: 20px;
+					margin-right: 10px;
+				}
+
+				.languageCode {
+					position: relative;
+					color: white;
+					text-transform: uppercase;
+					text-decoration: underline;
+				}
+			}
+
+			.menuButton {
+				display: none;
+				margin-left: 10px;
+				@media screen and (max-width: $sm) {
+					display: block;
+				}
+
+				.menuIcon {
+					color: white;
+				}
+			}
+		}
+	}
+}
+
+.menuFlag {
+	position: relative;
+	width: 24px;
+	height: 24px;
+	margin-right: 14px;
+}

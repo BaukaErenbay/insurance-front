@@ -1,0 +1,35 @@
+@import "../../css/variables.scss";
+
+.root {
+	position: relative;
+	overflow: hidden;
+	padding: 0 30px;
+
+	.container {
+		position: relative;
+		display: flex;
+	}
+}
+
+.button {
+	position:absolute;
+	top: 50%;
+	width: 50px;
+	height: 50px;
+	transform: translateY(-50%);
+	z-index: 9;
+	color: $accent-color;
+	cursor: pointer;
+
+	&[disabled] {
+		opacity: .3;
+		cursor: default;
+	}
+}
+
+.prev {
+	left: -10px;
+}
+.next {
+	right: -10px;
+}

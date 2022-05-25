@@ -1,0 +1,15 @@
+@import "../../css/variables.scss";
+
+.root {
+	$height: 80px;
+	width: 100%;
+	height: $height;
+	background-color: rgba(9, 9, 9, .57);
+
+	&[data-position="fixed"] {
+		position: fixed;
+	}
+	&[data-position="absolute"] {
+		position: absolute;
+	}
+}
